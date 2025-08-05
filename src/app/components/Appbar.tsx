@@ -5,11 +5,11 @@ import Image from "next/image";
 function Appbar() {
   return (
     <div className="flex justify-between items-center">
-      <div>
+      <div className="flex justify-center items-center">
         <div>
           <Image src={"/Wave.png"} alt="waves" />
         </div>
-        <div>Waves</div>
+        <div className="opacity-0 lg:opacity-1000">Waves</div>
       </div>
       <div className="sticky blur-sm bg-transperent">
         <Link href={"/shop"}>Shop</Link>
@@ -17,7 +17,7 @@ function Appbar() {
         <Link href={"/wishlist"}>WishList</Link>
       </div>
       <div>
-        <button>Learn more</button>
+        <button className="border rounded-sm ">Learn more</button>
       </div>
     </div>
   );
