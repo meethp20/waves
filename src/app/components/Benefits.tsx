@@ -49,8 +49,16 @@ function Benefits() {
         <div>
             <div  className='border border-white/20'/>
         </div>
-        <div>
-            {}
+        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3'>
+            {Cards.map((card,idx)=>{
+                return(
+                    <div key={idx}>
+                       <img src={card.img} alt="img" />
+                       <h1>{card.Header}</h1>
+                       <p>{card.Description}</p>
+                    </div>
+                )
+            })}
         </div>
     </div>
   )
