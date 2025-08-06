@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 interface Card{
    img:string,
    Header:string,
@@ -59,6 +60,9 @@ function Benefits() {
                     </div>
                 )
             })}
+        </div>
+        <div>
+            <Image src={'/big.png'} alt={'hwllow'} height={700} width={700} className='rounded-xl' />
         </div>
     </div>
   )
